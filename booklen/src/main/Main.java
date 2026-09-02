@@ -1,4 +1,4 @@
-package booklen;
+package main;
 
 public class Main {
 
