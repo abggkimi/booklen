@@ -3,6 +3,7 @@ package main;
 import java.util.Scanner;
 
 import service.BookService;
+import service.RentalService;
 import service.UserService;
 
 public class Menu {
@@ -22,10 +23,12 @@ public class Menu {
 
 			switch (sw) {
 			case 1: {
+				RentalService.rental(scan);
 				break;
 			}
 
 			case 2: {
+				RentalService.returnBook(scan);
 				break;
 			}
 
