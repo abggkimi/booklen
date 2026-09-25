@@ -3,6 +3,7 @@ package main;
 import java.util.Scanner;
 
 import service.BookService;
+import service.UserService;
 
 public class Menu {
 
@@ -67,10 +68,12 @@ public class Menu {
 			}
 
 			case 3: {
+				UserService.addUser(scan);
 				break;
 			}
 
 			case 4: {
+				UserService.editUser(scan);
 				break;
 			}
 
